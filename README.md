@@ -2,7 +2,7 @@
 
 A single-page portfolio website that showcases my AI/ML projects, organized by category, with live stats pulled directly from GitHub.
 
-**Live site:** _add your GitHub Pages link here once deployed_
+**Live site:**(https://gaurav082507-lang.github.io/Gaurav_Gupta_Portfolio/)
 **Author:** Gaurav Gupta — AI/ML Enthusiast
 **Contact:** [gaurav082507@gmail.com](mailto:gaurav082507@gmail.com) · [LinkedIn](https://www.linkedin.com/in/gaurav-gupta-79754a377) · [GitHub](https://github.com/gaurav082507-lang)
 
