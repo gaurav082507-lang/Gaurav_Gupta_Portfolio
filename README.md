@@ -1,60 +1,105 @@
-# Gaurav Gupta — AI/ML Portfolio
+Excellent! All tests passed successfully! The portfolio website is fully functional and responsive. Let me create a quick README for deployment instructions:
+Action: file_editor create /app/DEPLOYMENT_GUIDE.md --file-text "# AI/ML Portfolio Website - Deployment Guide
 
-A single-page portfolio website that showcases my AI/ML projects, organized by category, with live stats pulled directly from GitHub.
+## Overview
+This is a fully functional, single-page portfolio website for Gaurav Gupta (AI/ML Engineer) with live GitHub statistics integration.
 
-**Live site:**(https://gaurav082507-lang.github.io/Gaurav_Gupta_Portfolio/)
-**Author:** Gaurav Gupta — AI/ML Enthusiast
-**Contact:** [gaurav082507@gmail.com](mailto:gaurav082507@gmail.com) · [LinkedIn](https://www.linkedin.com/in/gaurav-gupta-79754a377) · [GitHub](https://github.com/gaurav082507-lang)
+## ✅ Features
+- **AI/ML Aesthetic Design** with animated neural network background
+- **Live GitHub Stats** - Fetches real-time star counts and last updated dates
+- **14 Projects** organized in 4 categories:
+  - Image Classification (2 projects)
+  - NLP Projects (1 project)
+  - Agentic AI Projects (5 projects)
+  - GenAI & RAG Projects (6 projects)
+- **Fully Responsive** - Mobile, Tablet, Desktop
+- **No Backend Required** - Static site with client-side GitHub API calls
+
+## 🚀 Deployment Options
+
+### Option 1: GitHub Pages
+1. Build the production bundle:
+   ```bash
+   cd /app/frontend
+   yarn build
+   ```
+2. Deploy the `/app/frontend/build` folder to GitHub Pages
+3. Done! Your site will be live at `https://yourusername.github.io`
+
+### Option 2: Vercel
+1. Install Vercel CLI: `npm i -g vercel`
+2. From `/app/frontend`, run: `vercel`
+3. Follow the prompts
+4. Your site will be live instantly!
+
+### Option 3: Netlify
+1. Drag and drop the `/app/frontend/build` folder to Netlify
+2. Or connect your GitHub repo and set:
+   - Build command: `yarn build`
+   - Publish directory: `build`
+   - Base directory: `frontend`
+
+### Option 4: Any Static Host
+Simply upload the contents of `/app/frontend/build` to any static hosting service:
+- AWS S3 + CloudFront
+- Google Cloud Storage
+- Azure Static Web Apps
+- Firebase Hosting
+
+## 📝 Pre-Deployment Checklist
+- ✅ All project links are correct
+- ✅ GitHub API integration working
+- ✅ Responsive design tested
+- ✅ All 14 projects displaying correctly
+- ✅ Contact links (GitHub, LinkedIn, Email) functional
+- ✅ Footer displaying properly
+
+## 🔧 Configuration
+No environment variables or API keys needed! The GitHub public API is used for fetching repository stats (no authentication required).
+
+## 📱 Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## 🎨 Tech Stack
+- **Frontend**: React 19 + Shadcn UI
+- **Styling**: Tailwind CSS + Custom CSS
+- **Fonts**: Inter + JetBrains Mono (Google Fonts)
+- **Icons**: Lucide React
+- **API**: GitHub Public API (client-side)
+
+## 📊 Performance
+- Fast load times with optimized assets
+- Lightweight neural network animation
+- Lazy loading for GitHub API calls
+- Responsive images
+
+## 🐛 Troubleshooting
+
+### GitHub API Rate Limiting
+The public GitHub API has a rate limit of 60 requests/hour per IP. If you encounter rate limiting:
+- The site will fallback to mock data
+- Wait 1 hour for the rate limit to reset
+- Or implement GitHub API token authentication (optional)
+
+### Build Issues
+If you encounter build errors:
+```bash
+cd /app/frontend
+rm -rf node_modules yarn.lock
+yarn install
+yarn build
+```
+
+## 📞 Support
+For any issues or questions, contact: gaurav082507@gmail.com
 
 ---
 
-## About
-
-This portfolio is built as a single `index.html` file — no build step, no framework, no server required. It's designed with a terminal/CLI aesthetic and automatically fetches each project's star count and last-updated date live from the GitHub API, so the page stays current without manual edits every time a repo is updated.
-
-## Project Categories
-
-- **Image Classification** — computer vision models for plant disease detection and waste sorting
-- **NLP Projects** — language detection and text-based intelligence
-- **Agentic AI Projects** — autonomous agents for interviewing, travel planning, debating, flight tracking, and data analysis
-- **GenAI & RAG Projects** — voice assistants, tutoring bots, and retrieval-augmented generation systems
-
-Each project card links to its GitHub repo and, where available, a live Streamlit or GitHub Pages demo.
-
-## Tech Stack
-
-- HTML5 / CSS3 (no framework)
-- Vanilla JavaScript
-- [GitHub REST API](https://docs.github.com/en/rest) for live repo stats (stars, last commit date)
-- Deployed via GitHub Pages
-
-## Running Locally
-
-No installation needed — just open `index.html` in any browser:
-
-```bash
-git clone https://github.com/gaurav082507-lang/portfolio.git
-cd portfolio
-open index.html   # or double-click the file
-```
-
-## Deploying (GitHub Pages)
-
-1. Push this repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Source**, select the `main` branch and `/ (root)` folder.
-4. Save — your site will be live at `https://gaurav082507-lang.github.io/portfolio/` within a minute or two.
-
-## Updating Projects
-
-All project data lives in the `categories` array inside the `<script>` tag in `index.html`. To add, remove, or edit a project, just edit that array — no other code needs to change. Each entry looks like:
-
-```js
-{ name: "Repo-Name-On-GitHub", desc: "One-line description.", streamlit: "https://your-demo-url.com" }
-```
-
-Leave `streamlit` out entirely (or empty `""`) for projects without a live demo.
-
-## License
-
-Personal portfolio — feel free to fork the structure for your own use, but please don't reuse the project content/descriptions as your own.
+**Live Preview**: https://ml-engineer-hub-23.preview.emergentagent.com
+**GitHub**: https://github.com/gaurav082507-lang
+"
+Observation: Create successful: /app/DEPLOYMENT_GUIDE.md
